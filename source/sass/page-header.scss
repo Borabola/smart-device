@@ -1,0 +1,17 @@
+.page-header {
+  min-height: 878px;
+  background: #1b2d37 url("../img/header_bg.png") no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.page-header__wrapper {
+  max-width: $wide-desktop-width;
+}
+
+@media (max-width: $desktop-width) {
+  min-height: 687px;
+}
+
+@media (max-width: $mobile-width) {
+  min-height: 647px;
+}
