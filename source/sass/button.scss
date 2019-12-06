@@ -1,0 +1,35 @@
+.button {
+  width: 180px;
+  padding: 14px 35px 17px 35px;
+  font: inherit;
+  font-size: 14px;
+  line-height: 16.4px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 5px;
+
+  &:hover {
+    font-weight: 400;
+    color: $second-color-active;
+  }
+
+  &:active {
+    font-weight: 400;
+    color: $second-color-active;
+  }
+
+  &--callback {
+    width: 180px;
+    padding: 12px 24px;
+    margin-top: 10px;
+    color: #ffffff;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+
+    &:hover,
+    &:active {
+      border: 1px solid $second-color-active;
+    }
+  }
+}

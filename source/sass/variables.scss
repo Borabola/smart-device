@@ -1,11 +1,15 @@
 /*----- Основные цвета -----*/
 $primary-color: rgba(27, 45, 55, 1);
+$second-color: rgba(255, 255, 255, 1);
+$second-color-active: rgba(255, 255, 255, 0.5);
+$third-color: rgba(0, 178, 255, 1);
+
 
 /*----- Размеры экранов -----*/
-$mobile-width: 320px;
-$tablet-width: 767px;
-$desktop-width: 1023px;
-$wide-desktop-width: 1670px;
+$min-mobile-width: 320px;
+$mobile-width: 767px;
+$tablet-width: 1023px;
+$desktop-width: 1420px;
 
 $retina-dpi: 144dpi;
 $retina-dppx: 1.5dppx;

@@ -26,7 +26,7 @@
 }
 
 body {
-  min-width: 320px;
+  min-width: $min-mobile-width;
   margin: 0 auto;
   padding: 0;
 

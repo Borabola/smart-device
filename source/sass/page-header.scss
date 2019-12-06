@@ -1,17 +1,88 @@
 .page-header {
   min-height: 878px;
+  padding-top: 33px;
   background: #1b2d37 url("../img/header_bg.png") no-repeat 50% 50%;
   background-size: cover;
 }
 
 .page-header__wrapper {
-  max-width: $wide-desktop-width;
+  display: flex;
+  max-width: $desktop-width;
+  margin: 0 auto;
+  min-height: 52px;
 }
 
-@media (max-width: $desktop-width) {
-  min-height: 687px;
+.page-header__logo {
+  margin-right: 117px;
+  margin-left: 2px;
+  margin-top: 4px;
+
+  & svg:first-child {
+    padding-right: 9px;
+  }
+
+  & svg:nth-child(2) {
+    margin-top: 6px;
+  }
+}
+
+.page-header__contacts {
+  display: flex;
+  list-style: none;
+  margin-left: auto;
+  margin-right: 5px;
+  font-family: "PT Mono", monospace;
+  font-size: 16px;
+  line-height: 18px;
+  color: $second-color;
+}
+
+.page-header__contacts li {
+  display: inline-block;
+  position: relative;
+
+  & a {
+    text-decoration: none;
+    color: $second-color;
+  }
+
+  &:first-child {
+    margin-top: 20px;
+    margin-right: 90px;
+
+    & svg {
+      fill: $third-color;
+      padding-top: 2px;
+      padding-right: 5px;
+    }
+  }
+
+  &:nth-child(2) {
+    margin-top: 17px;
+    margin-right: 50px;
+
+
+    & svg {
+      fill: $third-color;
+      padding-top: 2px;
+      padding-right: 5px;
+    }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .page-header {
+    min-height: 687px;
+  }
+
+  .page-header__contacts li span,
+  .page-header__contacts li:last-child {
+    display: none;
+  }
 }
 
 @media (max-width: $mobile-width) {
-  min-height: 647px;
+  .page-header {
+    min-height: 647px;
+  }
 }
