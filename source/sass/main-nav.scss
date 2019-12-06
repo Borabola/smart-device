@@ -42,3 +42,8 @@
   box-shadow: 0 10px 0 0 $second-color-active, 0 20px 0 0 $second-color-active;
 }
 
+@media (max-width: $tablet-width) {
+  .main-nav__toggle {
+    margin: 19px 20px 19px 0;
+  }
+}
