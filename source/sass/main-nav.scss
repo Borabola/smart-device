@@ -1,3 +1,7 @@
+.main-nav {
+  position: relative;
+}
+
 .main-nav__list {
   margin: 0;
   padding: 0;
@@ -12,16 +16,14 @@
   padding: 0;
   border: none;
   background-color: transparent;
-  /*background: url("../img/icon-menu-cross.svg") no-repeat; */
   outline: none;
-  order: 2;
 }
 
 .main-nav--closed .main-nav__toggle::before {
   content: "";
 
   position: absolute;
-  top: 0;
+  top: -1px;
   right: 0;
 
   width: 37px;
@@ -39,11 +41,17 @@
 
 .main-nav--closed .main-nav__toggle:active::before {
   background-color: $second-color-active;
-  box-shadow: 0 10px 0 0 $second-color-active, 0 20px 0 0 $second-color-active;
+  box-shadow: 0 10px 0 0 $second-color-active;
 }
 
 @media (max-width: $tablet-width) {
   .main-nav__toggle {
     margin: 19px 20px 19px 0;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .main-nav__toggle {
+    margin: 12px 20px 19px 0;
   }
 }

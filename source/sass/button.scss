@@ -1,27 +1,26 @@
 .button {
   width: 180px;
   padding: 14px 35px 17px 35px;
-  font: inherit;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 14px;
-  line-height: 16.4px;
+  line-height: 16px;
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
+  text-align: center;
   border-radius: 5px;
 
   &:hover {
-    font-weight: 400;
     color: $second-color-active;
   }
 
   &:active {
-    font-weight: 400;
     color: $second-color-active;
   }
 
   &--callback {
-    width: 180px;
-    padding: 12px 24px;
+    min-width: 180px;
+    padding: 14px 15px;
     margin-top: 10px;
     color: #ffffff;
     background-color: transparent;
@@ -31,5 +30,19 @@
     &:active {
       border: 1px solid $second-color-active;
     }
+  }
+
+  &--promo {
+    width: auto;
+    min-width: 407px;
+    padding: 18px 20px 17px 20px;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $second-color;
+    background-color: $third-color;
+    border: none;
   }
 }
