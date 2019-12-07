@@ -1,6 +1,7 @@
 .page-header {
   //min-height: 878px;
   padding-top: 26px; //33px
+  //background-color: $primary-color;
 }
 
 .page-header__wrapper {
@@ -145,11 +146,11 @@
   }
 
   .page-header__wrapper {
-    width: 90.6%;
+    width: 92%;
   }
 
   .page-header__logo {
-    margin-right: 6vw;
+    margin-right: 33vw;
 
     & svg {
       width: 38px;
@@ -164,7 +165,7 @@
   .page-header__contacts li {
     &:first-child {
       margin-top: 8px;
-      margin-right: 35px;
+      margin-right: 25px;
 
       & svg {
         width: 24px;
@@ -183,7 +184,7 @@
         width: 24px;
         height: 24px;
         padding-top: 0;
-        padding-right: 0;
+        padding-right: 2px;
       }
     }
   }
