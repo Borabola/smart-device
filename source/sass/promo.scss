@@ -1,6 +1,6 @@
 .promo {
   min-height: 878px;
-  margin-top: -97px;
+  margin-top: -97px; //-143
   //background: $primary-color url("../img/header_bg.png") no-repeat 50% 50%;
   background-color: $primary-color;
   background-image: url("../img/header_bg.png"), url("../img/bg_triangles.png"), url("../img/bg_boards.png");
@@ -32,6 +32,15 @@
     line-height: 34px;
     color: $second-color;
     margin-bottom: 43px;
+
+    &.promo__button--desktop {
+      max-width: none;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 19px;
+      text-align: center;
+      letter-spacing: 0.05em;
+    }
   }
 }
 
@@ -100,12 +109,17 @@ span.promo__button--mobile {
       font-size: 18px;
       line-height: 156.8%;
       margin-bottom: 55px;
+
+      &.promo__button--desktop {
+        padding: 18px 14px 17px 14px;
+      }
     }
   }
 
   .promo__wrapper {
     position: relative;
     margin-left: 3.2%;
+    padding-bottom: 1px;
   }
 
   .promo__line {
@@ -120,6 +134,7 @@ span.promo__button--mobile {
 
   .promo__button {
     margin-left: 115px;
+    margin-bottom: 163px;
   }
 }
 

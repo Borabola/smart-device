@@ -6,6 +6,7 @@
 
 .page-header__wrapper {
   display: flex;
+  justify-content: space-between;
   width: 74%;
   max-width: $desktop-width;
   margin: 0 auto;
@@ -13,7 +14,8 @@
 }
 
 .page-header__logo {
-  margin-right: 117px;
+  min-width: 250px;
+  margin-right: auto;
   margin-left: 2px;
   margin-top: 4px;
 
@@ -27,8 +29,16 @@
   width: 135px;
 }
 
+.page-header__contact-wrapper {
+  display: flex;
+  width: 77.25%;
+}
+
 .page-header__contacts {
   display: flex;
+  width: 60%;
+  min-width: 550px;
+  justify-content: space-between;
   list-style: none;
   margin-left: auto;
   margin-right: 5px;
@@ -53,23 +63,23 @@
 
   &:first-child {
     margin-top: 23px;
-    margin-right: 90px;
+    margin-right: 3.6%; //40px;
 
     & svg {
       fill: $third-color;
       padding-top: 2px;
-      padding-right: 5px;
+      padding-right: 10px;
     }
   }
 
   &:nth-child(2) {
     margin-top: 13px;
-    margin-right: 50px;
+    //margin-right: 50px;
 
 
     & svg {
       fill: $third-color;
-      padding-top: 6px;
+      padding-top: 10px;
       padding-right: 8px;
     }
   }
@@ -79,6 +89,13 @@
 .page-header__contacts li svg:active {
   fill: $third-color-active;
 }
+
+/*@media (min-width: 1200px) {
+  .page-header__contacts li span,
+  .page-header__contacts li:last-child {
+    display: none;
+  }
+}*/
 
 @media (max-width: $tablet-width) {
   .page-header {
@@ -93,7 +110,7 @@
   }
 
   .page-header__logo {
-    margin-right: 46.6vw;
+    margin-right: auto; //46.6vw;
     margin-left: 2px;
     margin-top: 0;
 
@@ -102,7 +119,14 @@
     }
   }
 
+  .page-header__contact-wrapper {
+    width: 21.8%;
+    margin-left: auto;
+  }
+
   .page-header__contacts {
+    width: 10.78%;
+    min-width: 83px;
     margin-right: 0;
   }
 
@@ -114,7 +138,7 @@
   .page-header__contacts li {
     &:first-child {
       margin-top: 15px;
-      margin-right: 35px;
+      //margin-right: 35px;
 
       & svg {
         width: 24px;
@@ -126,7 +150,7 @@
 
     &:nth-child(2) {
       margin-top: 11px;
-      margin-right: 0;
+      //margin-right: 0;
 
 
       & svg {
@@ -136,6 +160,12 @@
         padding-right: 0;
       }
     }
+  }
+
+  span.promo__button--desktop {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.05em;
   }
 }
 
@@ -150,7 +180,8 @@
   }
 
   .page-header__logo {
-    margin-right: 33vw;
+    min-width: 30px;
+    margin-right: auto; //33vw;
 
     & svg {
       width: 38px;
@@ -160,6 +191,16 @@
     & img {
       display: none;
     }
+  }
+
+  .page-header__contact-wrapper {
+    width: 47.5%;
+    margin-left: auto;
+  }
+
+  .page-header__contacts {
+    width: 22.81%;
+    min-width: 75px;
   }
 
   .page-header__contacts li {

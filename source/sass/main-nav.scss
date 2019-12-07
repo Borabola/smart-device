@@ -1,5 +1,6 @@
 .main-nav {
   position: relative;
+  border: 1px solid transparent;
 }
 
 .main-nav__list {
@@ -28,8 +29,8 @@
 
   width: 37px;
   height: 1px;
-  background-color: #ffffff;
-  box-shadow: 0 10px 0 0 #ffffff;
+  background-color: $second-color;
+  box-shadow: 0 10px 0 0 $second-color;
   outline: none;
 }
 
