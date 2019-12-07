@@ -1,0 +1,59 @@
+.advantages-wrapper {
+  width: 60.9%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.advantages-block {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+
+  & li {
+    position: relative;
+    box-sizing: border-box;
+    width: 48.72%;
+    padding: 40px 45px 100px;
+    margin-bottom: 30px;
+    border-style: solid;
+    border-width: 1px 1px 1px 3px;
+    border-color: $border-color $border-color $border-color $third-color;
+
+    &:hover {
+      border: none;
+      background-color: $third-color;
+
+      & h2,
+      & p {
+        color: $second-color;
+      }
+
+      & svg {
+        fill: $second-color;
+      }
+    }
+
+    & svg {
+      margin-bottom: 11px;
+      fill: $third-color;
+    }
+
+    & h2 {
+      margin-bottom: 18px;
+      font-family: "Roboto Condensed", sans-serif;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 34px;
+      color: $third-color;
+    }
+
+    & p {
+      font-family: "PT Mono", monospace;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 22px;
+      color: $text-color;
+    }
+  }
+}
