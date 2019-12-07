@@ -46,7 +46,10 @@
 
 .promo__wrapper {
   position: relative;
-  margin-left: 13%;
+  //margin-left: 13%;
+  width: 74%;
+  max-width: $desktop-width;
+  margin: 0 auto;
 }
 
 .promo__line {
@@ -118,7 +121,8 @@ span.promo__button--mobile {
 
   .promo__wrapper {
     position: relative;
-    margin-left: 3.2%;
+    width: 95%;
+    margin: 0 auto;
     padding-bottom: 1px;
   }
 
@@ -172,6 +176,7 @@ span.promo__button--mobile {
 
   .promo__button {
     margin-left: 8px;
+    margin-bottom: 69px;
   }
 
   span.promo__button--desktop {
