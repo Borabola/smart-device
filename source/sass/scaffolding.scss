@@ -25,6 +25,15 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "PT Mono", monospace;
+  src: url("../fonts/pt-mono-v7-cyrillic_latin-regular.woff") format("woff"),
+    url("../fonts/pt-mono-v7-cyrillic_latin-regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
   min-width: $min-mobile-width;
   margin: 0 auto;

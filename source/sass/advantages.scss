@@ -20,8 +20,8 @@
   & li {
     position: relative;
     box-sizing: border-box;
-    width: 48.72%;
-    padding: 40px 45px 67px;
+    width: 48.7%;
+    padding: 40px 40px 67px;
     margin-bottom: 30px;
     border-style: solid;
     border-width: 1px 1px 1px 3px;
@@ -33,7 +33,7 @@
     }
 
     &:hover {
-      border: none;
+      border-color: $third-color;
       background-color: $third-color;
 
       & h3,
@@ -69,14 +69,15 @@
       font-size: 16px;
       line-height: 22px;
       color: $text-color;
+      letter-spacing: 0.00005em;
     }
   }
 }
 
 .advantages__about {
   padding: 0 10px 120px 180px;
-  background: url("../img/mask_group.png") no-repeat -2.1% 0;
-  background-size: 19%;
+  background: url("../img/mask_group.png") no-repeat -3.5% 0;  //-2.1%
+  background-size: 19.1%;
 }
 
 .advantages__about h2 {
@@ -108,7 +109,7 @@
 @media (max-width: $tablet-width) {
   .advantages {
     padding-top: 53px;
-    background: url(../img/bg_adv-triangles.png) no-repeat 25% 50px;
+    background: url("../img/bg_adv-triangles.png") no-repeat 25% 50px;
     background-size: 210%;
   }
 
@@ -165,5 +166,46 @@
 
   .advantages__tablet-hidden {
     display: none;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .advantages {
+    padding-top: 37px;
+    background: url("../img/bg_adv-triangles.png") no-repeat 43% 200px;
+    background-size: cover;
+  }
+
+  .advantages-wrapper {
+    width: 90.62%;
+  }
+
+  .advantages__block {
+    flex-direction: column;
+
+    & li {
+      width: 100%;
+      padding: 24px 12px 20px 25px;
+      margin-bottom: 22px;
+    }
+  }
+
+  .advantages__about {
+    padding: 0 0 75px 0;
+    background-image: none;
+  }
+
+  .advantages__about h2 {
+    font-size: 28px;
+    line-height: 140.62%;
+    margin-bottom: 23px;
+  }
+
+  .advantages__about p {
+    margin-bottom: 40px;
+
+    &:last-of-type {
+      margin-bottom: 40px;
+    }
   }
 }
