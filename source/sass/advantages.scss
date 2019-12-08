@@ -108,6 +108,8 @@
 @media (max-width: $tablet-width) {
   .advantages {
     padding-top: 53px;
+    background: url(../img/bg_adv-triangles.png) no-repeat 25% 50px;
+    background-size: 210%;
   }
 
   .advantages-wrapper {
