@@ -15,17 +15,22 @@
   justify-content: space-between;
   flex-wrap: wrap;
   list-style: none;
+  margin-bottom: 77px;
 
   & li {
     position: relative;
     box-sizing: border-box;
     width: 48.72%;
-    padding: 40px 45px 100px;
+    padding: 40px 45px 67px;
     margin-bottom: 30px;
     border-style: solid;
     border-width: 1px 1px 1px 3px;
     border-color: $border-color $border-color $border-color $third-color;
     background-color: $second-color;
+
+    &:last-child {
+      padding-bottom: 87px;
+    }
 
     &:hover {
       border: none;
@@ -66,14 +71,29 @@
 }
 
 .advantages__about {
-  background: url("../img/mask_group.png") no-repeat 0 0;
-  background-size: contain;
+  padding: 0 10px 120px 180px;
+  background: url("../img/mask_group.png") no-repeat -30px 0;
+  background-size: 19%;
 }
 
 .advantages__about h2 {
+  margin-bottom: 18px;
   font-family: "Roboto Condensed", sans-serif;
   font-weight: normal;
   font-size: 36px;
   line-height: 51px;
   color: $text-color;
+}
+
+.advantages__about p {
+  margin-bottom: 20px;
+  font-family: "PT Mono", monospace;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: grey;
+
+  &:last-of-type {
+    margin-bottom: 55px;
+  }
 }

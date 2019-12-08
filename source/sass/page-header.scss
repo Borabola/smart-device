@@ -52,13 +52,14 @@
   display: inline-block;
   position: relative;
 
+  &:hover a {
+    color: $second-color-active;
+  }
+
   & a {
     text-decoration: none;
     color: $second-color;
-
-    &:hover {
-      color: $second-color-active;
-    }
+    cursor: pointer;
   }
 
   &:first-child {
@@ -85,17 +86,10 @@
   }
 }
 
-.page-header__contacts li svg:hover,
-.page-header__contacts li svg:active {
+.page-header__contacts li:hover svg,
+.page-header__contacts li:active svg {
   fill: $third-color-active;
 }
-
-/*@media (min-width: 1200px) {
-  .page-header__contacts li span,
-  .page-header__contacts li:last-child {
-    display: none;
-  }
-}*/
 
 @media (max-width: $tablet-width) {
   .page-header {
