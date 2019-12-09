@@ -16,7 +16,8 @@
 }
 
 .question-form__container {
-  width: 55%;
+  //width: 55%;
+  width: 570px;
 
   & h3 {
     margin-bottom: 5px;
@@ -62,7 +63,7 @@
   }
 
   & input[type="text"] {
-    width: 42%;
+    width: 40%;
     margin-right: 31px;
     margin-bottom: 40px;
   }
@@ -93,6 +94,7 @@
   & div {
     position: relative;
     width: 35%;
+    margin-left: 40px;
   }
 }
 
@@ -107,7 +109,7 @@
   &::before {
     content: "";
     position: absolute;
-    left: -40px;
+    left: -35px;
     top: 5px;
     width: 16px;
     height: 16px;
@@ -125,7 +127,7 @@
 .question-form__checkbox-input:checked + label::before {
   content: "";
   position: absolute;
-  left: -40px;
+  left: -35px;
   top: 5px;
   width: 16px;
   height: 16px;
@@ -150,4 +152,58 @@
   font-size: 16px;
   line-height: 22px;
   color: $second-color;
+}
+
+
+@media (max-width: $tablet-width) {
+  .question-form {
+    background-image: none;
+  }
+
+  .question-form__wrapper {
+    width: 76%;
+    margin: 0 auto;
+    padding: 80px 0 103px;
+  }
+
+  .question-form__container {
+    width: 100%;
+
+    & h3 {
+      margin-bottom: 15px;
+      font-size: 32px;
+      line-height: 45px;
+    }
+
+    & p {
+      margin-bottom: 55px;
+    }
+  }
+
+  .question-form__form textarea {
+    height: 160px;
+    margin-bottom: 45px;
+  }
+
+  .question-form__form div {
+    margin-top: 5px;
+    width: 40%;
+  }
+
+  .question-form__checkbox-label {
+    display: block;
+  }
+
+  .button--question-form {
+    width: 47.36%;
+    min-width: auto;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .question-form__form input[type="text"],
+  .question-form__form input[type="tel"] {
+    width: 100%;
+    margin-right: 0;
+  }
 }

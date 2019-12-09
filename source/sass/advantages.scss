@@ -77,7 +77,7 @@
 .advantages__about {
   padding: 0 10px 120px 180px;
   background: url("../img/mask_group.png") no-repeat -3.5% 0;  //-2.1%
-  background-size: 19.1%;
+  background-size: initial;
 }
 
 .advantages__about h2 {
@@ -147,7 +147,7 @@
   .advantages__about {
     padding: 0 0 95px 187px;
     background: url("../img/mask_group.png") no-repeat -30px 0;
-    background-size: 34%;
+    background-size: initial; //34%;
 
     & h2 {
       font-size: 32px;
