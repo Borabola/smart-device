@@ -51,8 +51,9 @@
   & li {
     display: inline-block;
     position: relative;
+    color: $second-color;
 
-    &:hover a span {
+    &:hover a {
       color: $second-color-active;
     }
 
@@ -91,12 +92,14 @@
   }
 }
 
-.page-header__contacts > li:hover > span {
+.page-header__contacts li:active,
+.page-header__contacts li:focus,
+.page-header__contacts li:hover {
   color: $second-color-active;
 }
 
-.page-header__contacts li:hover svg,
-.page-header__contacts li:active svg {
+.page-header__contacts li:active svg,
+.page-header__contacts li:hover svg {
   fill: $third-color-active;
 }
 
