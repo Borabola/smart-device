@@ -58,18 +58,19 @@
 }
 
 .products__item--production {
-    background-image: url("../img/bg_product1.png");
-  }
+  background-image: url("../img/bg_product1.png");
+}
 
 .products__item--assembling {
-    background-image: url("../img/bg_product2.png");
-  }
+  background-image: url("../img/bg_product2.png");
+}
 
 .products__item--components {
-    background-image: url("../img/bg_product3.png");
-  }
+  background-image: url("../img/bg_product3.png");
+}
 
-.products__item a:hover {
+.products__item:hover,
+.products__item:focus {
   opacity: 0.5;
 }
 
@@ -116,7 +117,6 @@
     background-image: url("../img/bg_product3_tablet.png");
     background-size: cover;
   }
-
 }
 
 @media (max-width: $mobile-width) {
@@ -147,7 +147,6 @@
   .products__item {
     min-height: 256px;
     margin-bottom: 30px;
-
   }
 
   .products__item--production {

@@ -17,7 +17,7 @@ footer {
 
 .footer__first-line {
   display: flex;
-  max-height: 159px;
+  //max-height: 159px;
   justify-content: space-between;
   flex-wrap: nowrap;
   padding-bottom: 59px;
@@ -35,10 +35,18 @@ footer {
   display: none;
 }
 
+.footer__second-line-tablet {
+  width: 71%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
 .footer-nav {
   display: flex;
   flex-wrap: wrap;
-  width: 32%;
+  width: 45%;
+  margin-left: 15px;
 
   & h3 {
     width: 100%;
@@ -88,6 +96,7 @@ footer {
 
 .footer-contacts {
   width: 24%;
+  min-width: 333px;
 
   & h3 {
     width: 100%;
@@ -148,4 +157,90 @@ a.common-info__item:hover {
 
 .common-info__item--developed {
   margin-left: auto;
+}
+
+@media (max-width: $tablet-width) {
+  footer {
+    padding: 20px 0 14px;
+  }
+
+  .footer__wrapper {
+    width: 100%;
+  }
+
+  .footer-company {
+    display: flex;
+    justify-content: space-between;
+    width: 93.5%;
+    margin: 0 auto;
+  }
+
+  .footer__first-line {
+    flex-wrap: wrap;
+    min-height: unset;
+    padding-bottom: 33px;
+  }
+
+  .footer-company__logo {
+    margin-bottom: 17px;
+  }
+
+  .footer-company__rights {
+    display: inline-block;
+    padding-top: 17px;
+    font-family: "PT Mono", monospace;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $primary-color;
+    opacity: 0.5;
+  }
+
+  .social__list {
+    margin-top: 8px;
+  }
+
+  .footer__line {
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin-bottom: 38px;
+    vertical-align: top;
+    background-color: $text-color-light;
+  }
+
+  .footer__second-line-tablet {
+    display: flex;
+    justify-content: space-between;
+    width: 93.5%;
+    margin: 0 auto;
+  }
+
+  .footer-nav {
+    margin-left: 0;
+    width: 38%;
+  }
+
+  .footer-contacts {
+    width: 48%;
+  }
+
+  .common-info {
+    width: 93.5%;
+    margin: 0 auto;
+    padding: 22px 0 0;
+  }
+
+  .common-info__item--right,
+  .common-info__item--right2 {
+    display: none;
+  }
+
+  .common-info__item--confidentiality,
+  .common-info__item--developed {
+    margin: 0;
+  }
 }

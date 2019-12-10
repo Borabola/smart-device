@@ -65,8 +65,8 @@
 
     &:hover,
     &:active {
-      color: $third-color-active;
-      border: 1px solid $third-color-active;
+      color: $second-color;
+      background-color: $third-color;
     }
   }
 
