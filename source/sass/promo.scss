@@ -83,9 +83,11 @@ span.promo__button--mobile {
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
+  text-decoration: none;
   transform: rotate(-90deg);
   color: $second-color;
   opacity: 0.5;
+  cursor: pointer;
 
   left: -35px;
   bottom: -10.42vw; //-148px;

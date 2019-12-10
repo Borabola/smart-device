@@ -31,6 +31,11 @@ footer {
   margin-bottom: 40px;
 }
 
+.footer-company__logo--img {
+  display: inline-block;
+  width: 135px;
+}
+
 .footer-company__logo-block {
   min-width: 250px;
   margin-right: auto;
@@ -174,7 +179,7 @@ a.common-info__item:hover {
 .footer-contacts input[type="checkbox"] {
   position: absolute;
   width: 100%;
-  height: 100%;
+  //height: 100%;
   margin: 0;
   padding: 0;
   opacity: 0;
