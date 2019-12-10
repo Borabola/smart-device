@@ -170,6 +170,17 @@ a.common-info__item:hover {
   margin-left: auto;
 }
 
+.footer-nav input[type="checkbox"],
+.footer-contacts input[type="checkbox"] {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+}
+
+
 @media (max-width: $tablet-width) {
   footer {
     padding: 20px 0 14px;
@@ -271,6 +282,10 @@ a.common-info__item:hover {
     margin-bottom: 17px;
   }
 
+  .footer__first-line {
+    padding-bottom: 0;
+  }
+
   .footer__social {
     margin-bottom: 58px;
   }
@@ -280,19 +295,43 @@ a.common-info__item:hover {
   }
 
   .footer__second-line-tablet {
+    position: relative;
     flex-direction: column;
     width: 100%;
+    min-height: 0;
+    overflow: hidden;
+
+    & h3 {
+      cursor: pointer;
+    }
+  }
+
+  .footer__second-line-tablet i {
+    position: absolute;
+    transform: translate(-6px, 0);
+    margin-top: 10px;
+    right: 28px;
+  }
+
+  .footer__second-line-tablet i::before,
+  .footer__second-line-tablet i::after {
+    content: "";
+    position: absolute;
+    background-color: $text-color-light;
+    width: 16px;
+    height: 1px;
+    top: -3px;
   }
 
   .footer-nav,
   .footer-contacts {
     width: 100%;
-    padding: 30px 0 30px;
+    padding: 30px 0 0;
     border-bottom: 1px solid $text-color-light;
 
     & h3 {
       width: 92%;
-      margin: 0 auto 36px auto;
+      margin: 0 auto 20px auto;
     }
   }
 
@@ -300,12 +339,6 @@ a.common-info__item:hover {
   .footer-contacts p {
     width: 92%;
     margin: 0 auto;
-  }
-
-  .footer-contacts {
-    width: 85%;
-    padding: 30px 0 30px;
-    border-bottom: 1px solid $text-color-light;
   }
 
   .footer__container {
@@ -321,5 +354,28 @@ a.common-info__item:hover {
   .common-info__item--confidentiality,
   .common-info__item--developed {
     margin-bottom: 21px;
+  }
+
+  .footer-nav-list,
+  .footer-contacts__content {
+    position: relative;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+
+  .footer__second-line-tablet input[type="checkbox"]:checked ~ .footer-nav-list,
+  .footer__second-line-tablet input[type="checkbox"]:checked ~ .footer-contacts__content {
+    //margin-top: 0;
+    max-height: 0;
+    opacity: 0;
+    transform: translate(0, 50%);
+    margin-bottom: 0;
+  }
+
+  .footer__second-line-tablet input[type="checkbox"]:checked ~ i::after {
+    transform: rotate(-90deg);
   }
 }
