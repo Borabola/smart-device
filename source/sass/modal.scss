@@ -1,0 +1,81 @@
+.modal {
+  position: relative;
+  color: $second-color;
+  background-color: $third-color;
+  z-index: 7;
+
+  &--callback {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    display: block; //none;
+    width: 490px;
+    min-height: 605px; //временно
+    padding: 32px 39px;
+    margin-left: -245px;
+    margin-top: -300px;
+    box-sizing: border-box;
+  }
+}
+
+.modal__show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.modal__error {
+  animation: shake 0.6s;
+}
+
+.modal__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 18px;
+  height: 18px;
+
+  font-size: 0;
+
+  background-color: inherit;
+  border: 0;
+
+  cursor: pointer;
+}
+
+.modal__close::before,
+.modal__close::after {
+  content: "";
+
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 19px;
+  height: 1px;
+  background-color: $second-color;
+}
+
+.modal__close::before {
+  transform: rotate(45deg);
+}
+
+.modal__close::after {
+  transform: rotate(-45deg);
+}
+
+.modal--callback h2 {
+  margin-bottom: 11px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 39px;
+  color: $second-color;
+}
+
+.modal--callback p {
+  margin-bottom: 34px;
+  font-family: "PT Mono", monospace;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: $second-color;
+}

@@ -41,7 +41,7 @@
               <li class="page-header__contact-item page-header__contact-item--tel">
                 <a href="tel:+74950005252">
                   <svg width="18" height="18">
-                    <use xlink:href="#icon-tel"></use>
+                    <use xlink:href="#icon-tel2"></use>
                   </svg>
                   <span>+7 (495) 000 52 52</span>
                 </a>
@@ -60,7 +60,6 @@
           <button class="promo__button button button--promo" type="button"><span class="promo__button--desktop">Получить бесплатную консультацию</span><span class="promo__button--mobile">Бесплатная консультация</span></button>
           <div class="promo__scroll">Скролл вниз</div>
         </div>
-
       </section>
       <section class="advantages">
         <div class="advantages-wrapper">
@@ -217,11 +216,28 @@
         <a  class="common-info__item common-info__item--confidentiality" href="#">Условия конфиденциальности</a>
         <a class="common-info__item common-info__item--developed" href="#">Developed by wow studio </a>
       </div>
-
     </div>
-
-
   </footer>
 </div>
+<!--Окно обратной связи-->
+<section class="modal modal--callback">
+  <h2>Закажите звонок</h2>
+  <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+  <form class="callback" method="post" action="https://echo.htmlacademy.ru">
+      <label class="visually-hidden" for="user-name">Имя </label>
+      <input id="user-name-modal" type="text" name="user-name" placeholder="Имя" required>
+      <label class="visually-hidden" for="user-phone-number-modal">Телефон</label>
+      <input id="user-phone-number-modal" type="tel" name="email" placeholder="Телефон" required>
+      <textarea name="user-question" id="user-question-modal" rows="5" placeholder="Ваш вопрос"></textarea>
+      <button class="button button--callback-modal" type="submit">Отправить</button>
+      <input class="callback__checkbox-input visually-hidden" type="checkbox" id="personal-data-modal">
+      <label class="callback__checkbox-label" for="personal-data-modal">Я согласен на обработку  персональных данных</label>
+    </form>
+  <button class="modal__close" type="button">Закрыть</button>
+</section>
+
+</div>
+<div class="page__overlay"></div>
+<script src="js/feedback.min.js"></script>
 </body>
 </html>

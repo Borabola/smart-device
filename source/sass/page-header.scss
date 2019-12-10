@@ -1,7 +1,8 @@
 .page-header {
-  //min-height: 878px;
+  position: relative;
   padding-top: 26px; //33px
   //background-color: $primary-color;
+  z-index: 2;
 }
 
 .page-header__wrapper {
@@ -74,7 +75,7 @@
 }
 
 .page-header__contact-item:hover a span {
-  color: red;
+  color: $second-color-active;
 }
 
 .page-header__contact-item:not(:last-of-type) {
@@ -103,18 +104,6 @@
     padding-top: 10px;
     padding-right: 8px;
   }
-}
-
-.page-header__contact-item:active a span,
-.page-header__contact-item:focus a span,
-.page-header__contact-item:hover a span {
-  color: $second-color-active;
-}
-
-.page-header__contact-item a:active,
-.page-header__contact-item a:focus,
-.page-header__contact-item a:hover {
-  color: $second-color-active;
 }
 
 .page-header__contact-item:active svg,
