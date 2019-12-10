@@ -1,0 +1,47 @@
+.social__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 112px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social__item {
+  position: relative;
+  width: 27px;
+  height: 27px;
+}
+
+.social__link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  margin-top: 5px;
+  vertical-align: middle;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.social__link--odnoklas {
+  background: url("../img/Odnoklass.png") no-repeat center center;
+}
+
+.social__link--facebook {
+  background: url("../img/FB.png") no-repeat center center;
+}
+
+.social__link--vk {
+  background: url("../img/VK.png") no-repeat center center;
+}

@@ -72,3 +72,17 @@ picture {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.page__wrapper {
+  .content {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+  }
+}

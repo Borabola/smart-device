@@ -38,7 +38,7 @@
   display: flex;
   flex-shrink: 1;
   width: 60.5%;
-  min-width: 575px; //665px;
+  min-width: 585px; //665px;
   justify-content: space-between;
   list-style: none;
   margin-left: auto;
@@ -47,59 +47,70 @@
   font-size: 16px;
   line-height: 18px;
   //color: $second-color;
+}
 
-  & li {
-    display: inline-block;
-    position: relative;
+.page-header__contact-item {
+  display: inline-block;
+  position: relative;
+  color: $second-color;
+
+  &:hover a {
+    color: $second-color-active;
+  }
+
+  & a {
+    text-decoration: none;
     color: $second-color;
-
-    &:hover a {
-      color: $second-color-active;
-    }
-
-    & a {
-      text-decoration: none;
-      color: $second-color;
-      cursor: pointer;
-    }
-
-    &:not(:last-child) {
-      margin-left: 1%;
-      margin-right: 1%; //40px;
-
-      & svg {
-        fill: $third-color;
-        padding-top: 2px;
-        padding-right: 10px;
-      }
-    }
-
-    &:first-child {
-      margin-right: 3.6%;
-      margin-top: 23px;
-    }
-
-    &:nth-child(2) {
-      margin-top: 13px;
-      //margin-right: 50px;
-
-      & svg {
-        fill: $third-color;
-        padding-top: 10px;
-        padding-right: 8px;
-      }
-    }
+    cursor: pointer;
   }
 }
 
-.page-header__contacts li:active,
-.page-header__contacts li:focus,
-.page-header__contacts li:hover {
+.page-header__contact-item:hover a span {
+  color: red;
+}
+
+.page-header__contact-item:not(:last-of-type) {
+  margin-left: 1%;
+  margin-right: 1%; //40px;
+
+  & svg {
+    fill: $third-color;
+    padding-top: 2px;
+    padding-right: 10px;
+  }
+}
+
+.page-header__contact-item--email {
+  margin-right: 3.6%;
+  margin-top: 23px;
+}
+
+.page-header__contact-item.page-header__contact-item--tel {
+  margin-top: 10px;
+  margin-left: 3%;
+  //margin-right: 50px;
+
+  & svg {
+    fill: $third-color;
+    padding-top: 10px;
+    padding-right: 8px;
+  }
+}
+
+.page-header__contact-item:active a span,
+.page-header__contact-item:focus a span,
+.page-header__contact-item:hover a span {
   color: $second-color-active;
 }
 
-.page-header__contacts li:active svg,
-.page-header__contacts li:hover svg {
+.page-header__contact-item a:active,
+.page-header__contact-item a:focus,
+.page-header__contact-item a:hover {
+  color: $second-color-active;
+}
+
+.page-header__contact-item:active svg,
+.page-header__contact-item:hover svg {
   fill: $third-color-active;
 }
 
@@ -137,36 +148,33 @@
     margin-right: 0;
   }
 
-  .page-header__contacts li span,
-  .page-header__contacts li:last-child {
+  .page-header__contact-item span,
+  .page-header__contact-item:last-child {
     display: none;
   }
 
-  .page-header__contacts li {
-    &:first-child {
-      margin-top: 15px;
-      //margin-right: 35px;
+  .page-header__contact-item--email {
+    margin-top: 15px;
+    //margin-right: 35px;
 
-      & svg {
-        width: 24px;
-        height: 21px;
-        margin-top: -3px;
-        padding-right: 0;
-      }
+    & svg {
+      width: 24px;
+      height: 21px;
+      margin-top: -3px;
+      padding-right: 0;
     }
+  }
 
-    &:nth-child(2) {
-      margin-top: 11px;
-      //margin-right: 0;
+  .page-header__contact-item--tel {
+    margin-top: 11px;
+    //margin-right: 0;
+  }
 
-
-      & svg {
-        width: 24px;
-        height: 24px;
-        padding-top: 2px;
-        padding-right: 0;
-      }
-    }
+  .page-header__contact-item.page-header__contact-item--tel svg {
+    width: 24px;
+    height: 24px;
+    padding-top: 2px;
+    padding-right: 0;
   }
 
   span.promo__button--desktop {
@@ -210,30 +218,33 @@
     min-width: 75px;
   }
 
-  .page-header__contacts li {
-    &:first-child {
-      margin-top: 8px;
-      margin-right: 25px;
+  .page-header__contact-item--email {
+    margin-top: 8px;
+    margin-right: 25px;
 
-      & svg {
-        width: 24px;
-        height: 21px;
-        margin-top: -4px;
-        padding-right: 0;
-      }
+    & svg {
+      width: 24px;
+      height: 21px;
+      margin-top: -4px;
+      padding-right: 0;
     }
+  }
 
-    &:nth-child(2) {
-      margin-top: 5px;
-      margin-right: 0;
+  .page-header__contact-item--tel {
+    margin-top: 5px;
+    margin-right: 0;
 
 
-      & svg {
-        width: 24px;
-        height: 24px;
-        padding-top: 0;
-        padding-right: 2px;
-      }
+    & svg {
+      width: 24px;
+      height: 24px;
+      margin-top: -4px;
+      padding-top: 0;
+      padding-right: 2px;
     }
+  }
+
+  .page-header__contact-item.page-header__contact-item--tel svg {
+    padding-top: 0;
   }
 }
