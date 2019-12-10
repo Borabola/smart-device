@@ -25,7 +25,9 @@
     border: 1px solid #ffffff;
 
     &:hover,
+    &:focus,
     &:active {
+      color: $second-color-active;
       border: 1px solid $second-color-active;
     }
   }
@@ -42,6 +44,13 @@
     color: $second-color;
     background-color: $third-color;
     border: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $second-color-active;
+      background-color: $third-color-active;
+    }
   }
 
   &--advantages {

@@ -2,21 +2,25 @@ footer {
   flex-grow: 0;
   flex-shrink: 0;
   flex-basis: auto;
+  padding: 65px 0 14px;
+}
+
+.footer__container {
+  border-bottom: 1px solid $text-color-light;
 }
 
 .footer__wrapper {
   width: 74%;
   max-width: $desktop-width;
   margin: 0 auto;
-  padding: 65px 0;
 }
 
 .footer__first-line {
   display: flex;
-  height: 159px;
+  max-height: 159px;
   justify-content: space-between;
   flex-wrap: nowrap;
-  margin-bottom: 50px;
+  padding-bottom: 59px;
 }
 
 .footer-company {
@@ -32,7 +36,58 @@ footer {
 }
 
 .footer-nav {
-  width: 35%;
+  display: flex;
+  flex-wrap: wrap;
+  width: 32%;
+
+  & h3 {
+    width: 100%;
+    margin-bottom: 28px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $primary-color;
+  }
+}
+
+.footer-nav-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-right: 15px;
+  list-style: none;
+}
+
+.footer-nav-list__item {
+  width: 100%;
+  font-family: "PT Mono", monospace;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  text-decoration: none;
+  color: $primary-color;
+  opacity: 0.5;
+}
+
+.footer-nav-list__1column {
+  display: flex;
+  flex-direction: column;
+  max-width: 243px;
+}
+
+.footer-nav-list__2column {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  max-width: 208px;
+}
+
+.footer-contacts {
+  width: 24%;
 
   & h3 {
     width: 100%;
@@ -46,11 +101,8 @@ footer {
     color: $primary-color;
   }
 
-  & nav {
-    list-style: none;
-  }
-
-  & li a {
+  & p {
+    width: 100%;
     font-family: "PT Mono", monospace;
     font-weight: 400;
     font-size: 15px;
@@ -59,4 +111,41 @@ footer {
     color: $primary-color;
     opacity: 0.5;
   }
+}
+
+.common-info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 14px 0 0;
+}
+
+.common-info__item {
+  font-family: "PT Mono", monospace;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $primary-color;
+  opacity: 0.5;
+}
+
+a.common-info__item:hover {
+  color: $second-color-active;
+}
+
+.common-info__item--right2 {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.common-info__item--confidentiality {
+  margin-left: 5%;
+  margin-right: 11%;
+}
+
+.common-info__item--developed {
+  margin-left: auto;
 }

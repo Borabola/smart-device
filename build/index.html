@@ -74,7 +74,7 @@
             </nav>
             <ul class="page-header__contacts">
               <li class="page-header__contact-item page-header__contact-item--email">
-                <a href="mailto:info@sd.ru">
+                <a class="link" href="mailto:info@sd.ru">
                   <svg width="19" height="14">
                     <use xlink:href="#icon-mail2"></use>
                   </svg>
@@ -137,7 +137,7 @@
               <p>Мы  подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.</p>
             </li>
           </ul>
-          <div class="advantages__about">
+          <div class="advantages__about" id="about">
             <h2>О компании</h2>
             <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
             <p> Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог<span class="advantages__desktop-hidden">..</span><span class="advantages__tablet-hidden">(РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</span></p>
@@ -145,7 +145,7 @@
         </div>
         </div>
       </section>
-      <section class="products">
+      <section class="products" id="products">
         <div class="products__wrapper">
           <h2>Service Device предлагает следующие товары и услуги</h2>
           <div class="products__list">
@@ -185,6 +185,7 @@
     </main>
   </div>
   <footer>
+    <div class="footer__container">
     <div class="footer__wrapper">
       <div class="footer__first-line">
       <div class="footer-company">
@@ -216,19 +217,21 @@
           </li>
           </ul>
         </div>
-
-
       </div>
       <div class="footer-nav">
         <h3>Разделы сайта</h3>
-        <nav>
-          <li><a href="#">О компании</a></li>
-          <li><a href="#">Продукты</a></li>
-          <li><a href="#">Производство печатных плат</a></li>
-          <li><a href="#">Монтаж печатных плат</a></li>
-          <li><a href="#">Комплектующие</a></li>
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Контакты</a></li>
+        <nav class="footer-nav-list">
+          <div class="footer-nav-list__1column">
+            <a class="footer-nav-list__item" href="#about">О компании</a>
+            <a class="footer-nav-list__item" href="#products">Продукты</a>
+            <a class="footer-nav-list__item" href="#">Производство печатных плат</a>
+            <a class="footer-nav-list__item" href="#">Монтаж печатных плат</a>
+          </div>
+          <div class="footer-nav-list__2column">
+            <a class="footer-nav-list__item" href="#">Комплектующие</a>
+            <a class="footer-nav-list__item" href="#">Доставка</a>
+            <a class="footer-nav-list__item" href="#">Контакты</a>
+          </div>
         </nav>
       </div>
       <div class="footer-contacts">
@@ -239,11 +242,14 @@
         <p>+7 (926) 926-080-79</p>
       </div>
       </div>
+    </div>
+    </div>
+    <div class="footer__wrapper">
       <div class="common-info">
-        <p>Все права защищены</p>
-        <p>1999-2018 SD Service Devices</p>
-        <a href="#">Условия конфиденциальности</a>
-        <a href="#">Developed by wow studio </a>
+        <p class="common-info__item common-info__item--right">Все права защищены</p>
+        <p class="common-info__item common-info__item--right2">1999-2018 SD Service Devices</p>
+        <a class="common-info__item common-info__item--confidentiality" href="#">Условия конфиденциальности</a>
+        <a class="common-info__item common-info__item--developed" href="#">Developed by wow studio </a>
       </div>
 
     </div>

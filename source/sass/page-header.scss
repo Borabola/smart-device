@@ -54,14 +54,22 @@
   position: relative;
   color: $second-color;
 
-  &:hover a {
-    color: $second-color-active;
-  }
-
   & a {
     text-decoration: none;
     color: $second-color;
     cursor: pointer;
+
+    &:hover {
+      color: $second-color-active;
+    }
+
+    &:focus {
+      color: $second-color-active;
+    }
+
+    &:active {
+      color: $second-color-active;
+    }
   }
 }
 
