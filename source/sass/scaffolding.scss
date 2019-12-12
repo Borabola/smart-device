@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Roboto Condensed", sans-serif;
-  src: url("../fonts/roboto-condensed-v18-cyrillic_latin-regular.woff") format("woff"),
-    url("../fonts/roboto-condensed-v18-cyrillic_latin-regular.woff2") format("woff2");
+  src: url("../fonts/roboto-condensed-v18-cyrillic_latin-regular.woff2") format("woff2"),
+    url("../fonts/roboto-condensed-v18-cyrillic_latin-regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -9,8 +9,8 @@
 
 @font-face {
   font-family: "Roboto Condensed", sans-serif;
-  src: url("../fonts/roboto-condensed-v18-cyrillic_latin-700.woff") format("woff"),
-    url("../fonts/roboto-condensed-v18-cyrillic_latin-700.woff2") format("woff2");
+  src: url("../fonts/roboto-condensed-v18-cyrillic_latin-700.woff2") format("woff2"),
+    url("../fonts/roboto-condensed-v18-cyrillic_latin-700.woff") format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -18,8 +18,8 @@
 
 @font-face {
   font-family: "PT Mono", monospace;
-  src: url("../fonts/pt-mono-v7-cyrillic-ext_latin_cyrillic-regular.woff") format("woff"),
-    url("../fonts/pt-mono-v7-cyrillic-ext_latin_cyrillic-regular.woff2") format("woff2");
+  src: url("../fonts/pt-mono-v7-cyrillic-ext_latin_cyrillic-regular.woff2") format("woff2"),
+    url("../fonts/pt-mono-v7-cyrillic-ext_latin_cyrillic-regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -27,8 +27,8 @@
 
 @font-face {
   font-family: "PT Mono", monospace;
-  src: url("../fonts/pt-mono-v7-cyrillic_latin-regular.woff") format("woff"),
-    url("../fonts/pt-mono-v7-cyrillic_latin-regular.woff2") format("woff2");
+  src: url("../fonts/pt-mono-v7-cyrillic_latin-regular.woff2") format("woff2"),
+    url("../fonts/pt-mono-v7-cyrillic_latin-regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -49,7 +49,6 @@ body {
   font-family: "PT Mono", monospace;
   //color: $primary-color;
   font-style: normal;
-  font-display: swap;
 }
 
 img {
