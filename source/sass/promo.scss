@@ -35,7 +35,7 @@
     color: $second-color;
     margin-bottom: 43px;
 
-    &.promo__button--desktop {
+    &.promo__button-text-desktop {
       max-width: none;
       font-size: 16px;
       font-weight: 600;
@@ -69,11 +69,11 @@
   margin-left: 97px;
 }
 
-span.promo__button--desktop {
+span.promo__button-text-desktop {
   display: inline;
 }
 
-span.promo__button--mobile {
+span.promo__button-text-mobile {
   display: none;
 }
 
@@ -117,7 +117,7 @@ span.promo__button--mobile {
       line-height: 156.8%;
       margin-bottom: 55px;
 
-      &.promo__button--desktop {
+      &.promo__button-text-desktop {
         padding: 18px 14px 17px 14px;
       }
     }
@@ -183,11 +183,11 @@ span.promo__button--mobile {
     margin-bottom: 69px;
   }
 
-  span.promo__button--desktop {
+  span.promo__button-text-desktop {
     display: none;
   }
 
-  span.promo__button--mobile {
+  span.promo__button-text-mobile {
     display: inline;
   }
 }

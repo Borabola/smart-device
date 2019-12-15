@@ -90,7 +90,7 @@ picture {
   flex-basis: auto;
 }
 
-.page__overlay {
+.overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -102,6 +102,6 @@ picture {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.page__overlay-show {
+.overlay--show {
   display: block;
 }

@@ -1,4 +1,4 @@
-footer {
+.footer {
   flex-grow: 0;
   flex-shrink: 0;
   flex-basis: auto;
@@ -31,7 +31,7 @@ footer {
   margin-bottom: 40px;
 }
 
-.footer-company__logo--img {
+.footer-company__logo-img {
   display: inline-block;
   width: 135px;
 }
@@ -187,7 +187,7 @@ a.common-info__item:hover {
 
 
 @media (max-width: $tablet-width) {
-  footer {
+  .footer {
     padding: 20px 0 14px;
   }
 
@@ -273,7 +273,7 @@ a.common-info__item:hover {
 }
 
 @media (max-width: $mobile-width) {
-  footer {
+  .footer {
     padding: 45px 0 14px;
   }
 
