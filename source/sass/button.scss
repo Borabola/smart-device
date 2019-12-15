@@ -5,6 +5,7 @@
   font-size: 14px;
   line-height: 16px;
   font-weight: 700;
+  //letter-spacing: 0.05em;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
@@ -13,6 +14,7 @@
 
   &:hover,
   &:active {
+    text-decoration: none;
     color: $second-color-active;
   }
 
@@ -51,9 +53,11 @@
   }
 
   &--promo {
-    width: auto;
+    //width: auto;
+    box-sizing: border-box;
+    width: fit-content;
     min-width: 407px;
-    padding: 18px 30px 17px 30px;
+    padding: 18px 15px 17px;
     font-size: 16px;
     line-height: 19px;
     text-align: center;

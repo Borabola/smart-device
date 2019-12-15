@@ -53,7 +53,7 @@
         <h1>Печатные платы</h1>
         <div class="promo__line"></div>
         <span>производство и монтаж, поставка комплектующих, блоков и модулей</span>
-          <button class="promo__button button button--promo" type="button"><span class="promo__button--desktop">Получить бесплатную консультацию</span><span class="promo__button--mobile">Бесплатная консультация</span></button>
+          <a class="button button--promo promo__button " href="#question-form"><span class="promo__button--desktop">Получить бесплатную консультацию</span><span class="promo__button--mobile">Бесплатная консультация</span></a>
           <a href="#end" class="promo__scroll">Скролл вниз</a>
         </div>
       </section>
@@ -113,7 +113,7 @@
           </div>
         </div>
       </section>
-      <section class="question-form">
+      <section class="question-form" id="question-form">
         <div class="question-form__wrapper">
           <div class="question-form__container">
             <h2 class="visually-hidden">Форма для вашего вопроса</h2>
@@ -123,7 +123,7 @@
               <label class="visually-hidden" for="user-name">Имя </label>
               <input id="user-name" type="text" name="user-name" placeholder="Имя" required>
               <label class="visually-hidden" for="user-phone-number">Телефон</label>
-              <input id="user-phone-number" type="tel" name="email" placeholder="Телефон" required>
+              <input id="user-phone-number" type="tel" name="user-phone-number" placeholder="Телефон" required>
               <textarea name="user-question" id="user-question" rows="5" placeholder="Ваш вопрос"></textarea>
               <button class="button button--question-form" type="submit">Задать вопрос</button>
               <div>
@@ -232,6 +232,9 @@
   <button class="modal__close" type="button">Закрыть</button>
 </section>
 <div class="page__overlay"></div>
+<script src="https://unpkg.com/imask"></script>
 <script src="js/callback.js"></script>
+<script src="js/validation.js"></script>
+<!--<script src="js/animation.js"></script> -->
 </body>
 </html>
