@@ -44,17 +44,21 @@
     }
   }
 
-  & div {
+  /*& div {
     position: relative;
     width: 35%;
     margin-left: 40px;
-  }
+  }*/
 }
 
-.callback__checkbox-label {
-  position: relative;
+div.callback__checkbox {
   box-sizing: border-box;
   width: 100%;
+  margin-left: 0;
+}
+
+div.callback__checkbox label {
+  position: relative;
   padding-left: 50px;
   font-family: "PT Mono", monospace;
   font-weight: 400;
@@ -81,7 +85,7 @@
   }
 }
 
-.callback__checkbox-input:checked + label::before {
+div.callback__checkbox input:checked + label::before {
   content: "";
   position: absolute;
   left: 0;
@@ -96,8 +100,8 @@
   border: 1px solid $second-color;
 }
 
-.callback__checkbox-input:checked + label:hover::before,
-.callback__checkbox-input:checked + label:focus::before {
+div.callback__checkbox input:checked + label:hover::before,
+div.callback__checkbox input:checked + label:focus::before {
   border: 1px solid $second-color-active;
 }
 

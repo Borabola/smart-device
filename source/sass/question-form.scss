@@ -98,7 +98,7 @@
   }
 }
 
-.question-form__checkbox-label {
+div.question-form__checkbox label {
   font-family: "PT Mono", monospace;
   font-weight: 400;
   font-size: 14px;
@@ -124,7 +124,7 @@
   }
 }
 
-.question-form__checkbox-input:checked + label::before {
+div.question-form__checkbox input:checked + label::before {
   content: "";
   position: absolute;
   left: -35px;
@@ -139,8 +139,8 @@
   border: 1px solid $second-color;
 }
 
-.question-form__checkbox-input:checked + label:hover::before,
-.question-form__checkbox-input:checked + label:focus::before {
+div.question-form__checkbox input:checked + label:hover::before,
+div.question-form__checkbox input:checked + label:focus::before {
   border: 1px solid $second-color-active;
 }
 
@@ -190,7 +190,7 @@
     width: 40%;
   }
 
-  .question-form__checkbox-label {
+  div.question-form__checkbox label {
     display: block;
   }
 }
@@ -232,12 +232,12 @@
     width: 80%;
   }
 
-  .question-form__checkbox-label::before {
+  div.question-form__checkbox label::before {
     left: -36px;
     top: 0;
   }
 
-  .question-form__checkbox-input:checked + label::before {
+  div.question-form__checkbox input:checked + label::before {
     left: -36px;
     top: 0;
   }
