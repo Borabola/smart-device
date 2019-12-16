@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Печатные платы</title>
+  <meta name="description" content="Производство и монтаж, поставка комплектующих, блоков и модулей печатных плат">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -220,13 +221,14 @@
       <div class="footer__line"></div>
       <div class="footer__second-line-tablet">
         <div class="footer-nav">
+          <label class="visually-hidden" for="footer-block-menu"></label>
           <input type="radio" name="footer-block" id="footer-block-menu" checked="">
           <i></i>
           <h3>Разделы сайта</h3>
           <nav class="footer-nav-list">
             <div class="footer-nav-list__1column">
-              <a class="footer-nav-list__item" href="#about">О компании</a>
-              <a class="footer-nav-list__item" href="#products">Продукты</a>
+              <a class="footer-nav-list__item footer-nav-list__item--about" href="#about">О компании</a>
+              <a class="footer-nav-list__item footer-nav-list__item--products" href="#products">Продукты</a>
               <a class="footer-nav-list__item" href="#">Производство печатных плат</a>
               <a class="footer-nav-list__item" href="#">Монтаж печатных плат</a>
             </div>
@@ -238,9 +240,11 @@
           </nav>
         </div>
         <div class="footer-contacts">
+          <label class="visually-hidden" for="footer-block-address"></label>
           <input type="radio" name="footer-block" id="footer-block-address">
           <i></i>
           <h3>Наш офис</h3>
+
           <div class="footer-contacts__content">
             <p>г. Мытищи, Олимпийский проспект, д.10</p>
             <p>+7 (495) 589-40-50</p>
@@ -282,6 +286,6 @@
 <script src="https://unpkg.com/imask"></script>
 <script src="js/callback.js"></script>
 <script src="js/validation.js"></script>
-<!--<script src="js/animation.js"></script> -->
+<script src="js/animation.js"></script>
 </body>
 </html>
