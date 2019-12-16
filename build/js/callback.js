@@ -1,6 +1,6 @@
 'use strict';
 var ESC_KEYCODE = 27;
-var overlay = document.querySelector('.page__overlay');
+var overlay = document.querySelector('.overlay');
 var callback = document.querySelector('.button--callback');
 var cbPopup = document.querySelector('.modal--callback');
 var cbClose = cbPopup.querySelector('.modal__close');
@@ -24,7 +24,7 @@ if (callback && cbPopup && overlay) {
   callback.addEventListener('click', function (evt) {
     evt.preventDefault();
     cbPopup.classList.add('modal__show');
-    overlay.classList.add('page__overlay-show');
+    overlay.classList.add('overlay--show');
 
     if (storageName) {
       userName.value = storageName;
@@ -46,7 +46,7 @@ if (cbPopup) {
     evt.preventDefault();
     cbPopup.classList.remove('modal__show');
     cbPopup.classList.remove('modal__error');
-    overlay.classList.remove('page__overlay-show');
+    overlay.classList.remove('overlay--show');
   });
 }
 
@@ -73,7 +73,7 @@ if (cbPopup && overlay) {
         evt.preventDefault();
         cbPopup.classList.remove('modal__show');
         cbPopup.classList.remove('modal__error');
-        overlay.classList.remove('page__overlay-show');
+        overlay.classList.remove('overlay--show');
       }
     }
   });
@@ -83,6 +83,6 @@ if (cbPopup && overlay) {
   overlay.addEventListener('click', function (evt) {
     evt.preventDefault();
     cbPopup.classList.remove('modal__show');
-    overlay.classList.remove('page__overlay-show');
+    overlay.classList.remove('overlay--show');
   });
 }
