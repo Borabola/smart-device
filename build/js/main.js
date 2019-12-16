@@ -11,6 +11,8 @@ var cbForm = cbPopup.querySelector('.callback');
 var storagePhone = localStorage.getItem('userName');
 var elementQuestion = document.querySelector('#user-phone-number');
 var elementModal = document.querySelector('#user-phone-number-modal');
+var timeout = 1000 / 60;
+var durationTime = 1500;
 
 
 var isStorageSupport = true;
@@ -135,11 +137,11 @@ function init() {
   var anchor3      = document.querySelector('#about');
   var anchor4      = document.querySelector('#products');
 
-  anchor1Link.addEventListener('click', (e) => { scrollTo(anchor1, e) }, false);
+  anchor1Link.addEventListener('click', (evt) => { scrollTo(anchor1, evt, durationTime) }, false);
 
-  anchor2Link.addEventListener('click', (e) => { scrollTo(anchor2, e) }, false);
-  anchor3Link.addEventListener('click', (e) => { scrollTo(anchor3, e) }, false);
-  anchor4Link.addEventListener('click', (e) => { scrollTo(anchor4.offsetTop, e) }, false);
+  anchor2Link.addEventListener('click', (evt) => { scrollTo(anchor2, evt, durationTime) }, false);
+  anchor3Link.addEventListener('click', (evt) => { scrollTo(anchor3, evt, durationTime) }, false);
+  anchor4Link.addEventListener('click', (evt) => { scrollTo(anchor4.offsetTop, evt, durationTime) }, false);
 }
 
 function scrollTopValue(domElement) { //DEBUG
@@ -151,11 +153,11 @@ function offsetTopValue(domElement) { //DEBUG
 
 var requestAnimFrame = (function() {
   return window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || function(callback) {
-    window.setTimeout(callback, 1000 / 60);
+    window.setTimeout(callback, timeout);
   };
 })();
 
-function scrollTo(to, callback, duration = 1500) {
+function scrollTo(to, callback, duration) {
 
 
   if (isDomElement(to)) {
