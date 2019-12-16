@@ -2,7 +2,7 @@
   background-color: $third-color;
   background-image: url("../img/paper_airplane_desktop.png"), url("../img/bg_form-triangles.svg");
   background-repeat: no-repeat, no-repeat;
-  background-position: 25% 42%, 100% 63%;
+  background-position: calc(50% - 350px) 42%, 100% 63%;
   background-size: initial;
 }
 
