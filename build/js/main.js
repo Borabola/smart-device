@@ -17,21 +17,6 @@ var inputMenu = document.querySelector('[name=footer-block-menu]');
 var timeout = 1000 / 60;
 var durationTime = 1500;
 
-/*function onInputChange() {
-  if (inputAddress.checked) {
-    inputAddress.checked = !inputAddress.checked;
-     inputMenu.checked = false;
-  }
-  if (inputMenu.checked) {
-    inputMenu.checked = !inputMenu.checked;
-    inputAddress.checked = false;
-  }
-}
-
-if (inputAddress && inputMenu && formBlock) {
-  formBlock.addEventListener('change', onInputChange);
-} */
-
 function onInputAdressChange() {
   if (inputAddress.checked) {
     inputMenu.checked = false;
