@@ -1,5 +1,6 @@
 'use strict';
 var ESC_KEYCODE = 27;
+var page = document.querySelector('.page');
 var overlay = document.querySelector('.overlay');
 var callback = document.querySelector('.button--callback');
 var cbPopup = document.querySelector('.modal--callback');
@@ -11,9 +12,45 @@ var cbForm = cbPopup.querySelector('.callback');
 var storagePhone = localStorage.getItem('userName');
 var elementQuestion = document.querySelector('#user-phone-number');
 var elementModal = document.querySelector('#user-phone-number-modal');
+var inputAddress = document.querySelector('[name=footer-block-address]');
+var inputMenu = document.querySelector('[name=footer-block-menu]');
 var timeout = 1000 / 60;
 var durationTime = 1500;
 
+/*function onInputChange() {
+  if (inputAddress.checked) {
+    inputAddress.checked = !inputAddress.checked;
+     inputMenu.checked = false;
+  }
+  if (inputMenu.checked) {
+    inputMenu.checked = !inputMenu.checked;
+    inputAddress.checked = false;
+  }
+}
+
+if (inputAddress && inputMenu && formBlock) {
+  formBlock.addEventListener('change', onInputChange);
+} */
+
+function onInputAdressChange() {
+  if (inputAddress.checked) {
+    inputMenu.checked = false;
+  }
+}
+
+function onInputMenuChange() {
+  if (inputMenu.checked) {
+    inputAddress.checked = false;
+  }
+}
+
+if (inputAddress && inputMenu) {
+  inputAddress.addEventListener('change', onInputAdressChange)
+}
+
+if (inputAddress && inputMenu) {
+  inputMenu.addEventListener('change', onInputMenuChange)
+}
 
 var isStorageSupport = true;
 var storageName = '';
@@ -29,6 +66,7 @@ if (callback && cbPopup && overlay) {
     evt.preventDefault();
     cbPopup.classList.add('modal__show');
     overlay.classList.add('overlay--show');
+    page.classList.add('no-scroll');
 
     if (storageName) {
       userName.value = storageName;
@@ -51,6 +89,7 @@ if (cbPopup) {
     cbPopup.classList.remove('modal__show');
     cbPopup.classList.remove('modal__error');
     overlay.classList.remove('overlay--show');
+    page.classList.remove('no-scroll');
   });
 }
 
@@ -78,6 +117,7 @@ if (cbPopup && overlay) {
         cbPopup.classList.remove('modal__show');
         cbPopup.classList.remove('modal__error');
         overlay.classList.remove('overlay--show');
+        page.classList.remove('no-scroll');
       }
     }
   });
@@ -88,6 +128,7 @@ if (cbPopup && overlay) {
     evt.preventDefault();
     cbPopup.classList.remove('modal__show');
     overlay.classList.remove('overlay--show');
+    page.classList.remove('no-scroll');
   });
 }
 
@@ -133,7 +174,7 @@ function init() {
 
   //Anchors
   var anchor1      = document.querySelector('#question-form');
-  var anchor2      = document.querySelector('#end');
+  var anchor2      = document.querySelector('#advantages');
   var anchor3      = document.querySelector('#about');
   var anchor4      = document.querySelector('#products');
 

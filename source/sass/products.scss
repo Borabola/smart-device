@@ -6,7 +6,7 @@
   width: 60.9%;
   max-width: 1170px;
   margin: 0 auto;
-  padding: 93px 0 129px;
+  padding: 93px 0 99px;
 
   & h2 {
     margin-bottom: 47px;
@@ -32,6 +32,11 @@
 .products__list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+a.products__item {
+  cursor: pointer;
 }
 
 .products__item {
@@ -39,6 +44,7 @@
   width: 31.62%;
   //max-width: 370px;
   min-height: 620px;
+  margin-bottom: 30px;
   text-decoration: none;
 
   ::after {

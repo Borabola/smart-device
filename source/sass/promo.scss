@@ -91,6 +91,11 @@ span.promo__button-text-mobile {
 
   left: -35px;
   bottom: -10.42vw; //-148px;
+
+  &:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
 }
 
 @media (max-width: $tablet-width) {
