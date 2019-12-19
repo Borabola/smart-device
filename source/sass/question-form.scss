@@ -85,6 +85,7 @@
     color: $second-color;
     background-color: $second-color-form;
     border: none;
+    resize: none;
 
     &:hover,
     &:focus,
@@ -258,6 +259,10 @@ div.question-form__checkbox input:checked + label:focus::before {
     margin-top: 30px;
     margin-left: 38px;
     width: 80%;
+  }
+
+  div.question-form__checkbox label {
+    padding-top: 0;
   }
 
   div.question-form__checkbox label::before {

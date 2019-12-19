@@ -153,15 +153,15 @@ span.promo__button-text-mobile {
 
 @media (max-width: $mobile-width) {
   .promo {
-    min-height: 647px;
-    margin-top: -69px;
-    background-position: center center, 55.5% -135px, 159% 90px;
-    background-size: cover, 450%, 95%;
+    min-height: 500px;
+    //margin-top: -69px;
+    //background-position: center center, 55.5% -135px, 159% 90px;
+    //background-size: cover, 450%, 95%;
 
     & h1 {
       max-width: 277px;
       padding-left: 4px;
-      padding-top: 287px;
+      padding-top: 218px;
       margin-bottom: 25px;
       font-size: 40px;
       line-height: 47px;

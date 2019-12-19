@@ -197,13 +197,14 @@
 }
 
 @media (max-width: $mobile-width) {
-  .page-header {
-    //min-height: 647px;
-    padding-top: 17px;
+  .page-header__container {
+    background-position: center center, 55.5% -135px, 159% 90px;
+    background-size: cover, 450%, 95%;
   }
 
   .page-header__wrapper {
     width: 92%;
+    padding-top: 17px;
   }
 
   .page-header__logo {
