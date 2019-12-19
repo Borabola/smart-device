@@ -57,7 +57,7 @@
     box-sizing: border-box;
     width: fit-content;
     min-width: 407px;
-    padding: 18px 15px 17px;
+    padding: 18px 15px;
     font-size: 16px;
     line-height: 19px;
     text-align: center;
@@ -78,7 +78,7 @@
   &--advantages {
     width: auto;
     min-width: 155px;
-    padding: 13px 40px 16px;
+    padding: 13px 42px 16px;
     margin-bottom: 70px;
     letter-spacing: 0.05em;
     color: $third-color;

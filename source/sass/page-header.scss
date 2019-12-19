@@ -1,8 +1,16 @@
 .page-header {
   position: relative;
-  padding-top: 26px; //33px
+  //padding-top: 26px; //33px
   //background-color: $primary-color;
-  z-index: 2;
+  //z-index: 2;
+}
+
+.page-header__container {
+  background-color: $primary-color;
+  background-image: url("../img/header_bg.png"), url("../img/bg_triangles.png"), url("../img/bg_boards.png");
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: center center, 70% 5px, 86% 259px;
+  background-size: cover, 100%, 37%;
 }
 
 .page-header__wrapper {
@@ -10,8 +18,9 @@
   justify-content: space-between;
   width: 95%;
   max-width: $desktop-width;
-  margin: 0 auto;
   min-height: 52px;
+  margin: 0 auto;
+  padding-top: 26px;
 }
 
 .page-header__logo {
