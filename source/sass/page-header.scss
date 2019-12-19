@@ -122,15 +122,21 @@
 
 
 @media (max-width: $tablet-width) {
-  .page-header {
+  /*.page-header {
     //min-height: 687px;
-    padding-top: 20px;
+    //padding-top: 20px;
+  } */
+
+  .page-header__container {
+    background-position: center center, 50% -135px, 165% 115px;
+    background-size: cover, 198%, 60%;
   }
 
   .page-header__wrapper {
     width: 93.5%;
     margin: 0 auto;
     min-height: 52px;
+    padding-top: 20px;
   }
 
   .page-header__logo {

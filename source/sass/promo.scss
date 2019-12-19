@@ -100,16 +100,16 @@ span.promo__button-text-mobile {
 
 @media (max-width: $tablet-width) {
   .promo {
-    min-height: 687px;
-    margin-top: -143px;
-    background-position: center center, 50% -70px, 159% 175px;
-    background-size: cover, 198%, 58%;
+    min-height: 600px;
+    //margin-top: -143px;
+    //background-position: center center, 50% -70px, 159% 175px;
+    //background-size: cover, 198%, 58%;
 
     & h1 {
       max-width: 450px;
-      padding-left: 63px;
-      padding-top: 252px;
-      margin-bottom: 29px;
+      padding-left: 67px;
+      padding-top: 110px;
+      margin-bottom: 28px;
       font-size: 60px;
       line-height: 70px;
       letter-spacing: 0.0008em;
@@ -117,10 +117,10 @@ span.promo__button-text-mobile {
 
     & span {
       max-width: 356px;
-      padding-left: 7px;
+      padding-left: 12px;
       font-size: 18px;
       line-height: 156.8%;
-      margin-bottom: 55px;
+      margin-bottom: 54px;
 
       &.promo__button-text-desktop {
         padding: 18px 14px 17px 14px;

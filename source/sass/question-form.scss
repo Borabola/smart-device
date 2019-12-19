@@ -106,7 +106,7 @@ div.question-form__checkbox label {
   font-family: "PT Mono", monospace;
   font-weight: 400;
   font-size: 14px;
-  line-height: 10px;
+  line-height: 16px;
   color: $second-color;
   opacity: 0.8;
 
@@ -180,19 +180,32 @@ div.question-form__checkbox input:checked + label:focus::before {
     width: 100%;
 
     & h3 {
-      margin-bottom: 15px;
+      margin-bottom: 17px;
       font-size: 32px;
       line-height: 45px;
     }
 
     & p {
-      margin-bottom: 55px;
+      margin-bottom: 54px;
     }
+  }
+
+  .question-form__form input {
+    padding-bottom: 19px;
+    margin-bottom: 42px;
+  }
+
+  .question-form__form input[type="tel"] {
+    width: 41.5%;
+  }
+
+  .question-form__form input[type="text"] {
+    width: 42%;
   }
 
   .question-form__form textarea {
     height: 160px;
-    margin-bottom: 45px;
+    margin-bottom: 46px;
   }
 
   .question-form__form div {
@@ -202,6 +215,11 @@ div.question-form__checkbox input:checked + label:focus::before {
 
   div.question-form__checkbox label {
     display: block;
+    padding-top: 5px;
+  }
+
+  div.question-form__checkbox label::before {
+    left: -33px;
   }
 }
 
