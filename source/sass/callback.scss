@@ -73,6 +73,7 @@ div.callback__checkbox label {
   line-height: 16px;
   color: $second-color;
   opacity: 0.8;
+  cursor: pointer;
 
   &::before {
     content: "";

@@ -9,7 +9,7 @@
 .question-form__wrapper {
   display: flex;
   justify-content: flex-end;
-  width: 78.2%;
+  width: 95%;
   max-width: 1170px;
   margin: 0 auto;
   padding: 91px 0 108px;
@@ -110,6 +110,7 @@ div.question-form__checkbox label {
   line-height: 16px;
   color: $second-color;
   opacity: 0.8;
+  cursor: pointer;
 
   &:hover,
   &:focus,
