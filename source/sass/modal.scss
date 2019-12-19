@@ -10,10 +10,10 @@
     top: 50%;
     display: none; //none;
     width: 490px;
-    min-height: 605px; //временно
-    padding: 32px 39px;
+    //min-height: 605px; //временно
+    padding: 32px 38px 37px;
     margin-left: -245px;
-    margin-top: -300px;
+    margin-top: -310px;
     box-sizing: border-box;
   }
 }
@@ -54,6 +54,11 @@
   background-color: $second-color;
 }
 
+.modal__close:hover::before,
+.modal__close:hover::after {
+  background-color: $second-color-active;
+}
+
 .modal__close::before {
   transform: rotate(45deg);
 }
@@ -72,6 +77,7 @@
 }
 
 .modal--callback p {
+  width: 90%;
   margin-bottom: 34px;
   font-family: "PT Mono", monospace;
   font-weight: 400;
