@@ -226,6 +226,11 @@
   .footer-nav {
     width: 55%;
   }
+
+  .common-info__item--confidentiality {
+    margin-left: 3%;
+    margin-right: 3%;
+  }
 }
 
 
@@ -304,8 +309,15 @@
   }
 
   .footer-nav {
+    //display: flex;
+    //flex-direction: column;
     margin-left: 0;
     width: 38%;
+  }
+
+  .footer-nav-list {
+    flex-direction: column;
+    flex-wrap: nowrap;
   }
 
   .footer-nav-list__2column {

@@ -105,12 +105,12 @@
 
 .page-header__contact-item.page-header__contact-item--tel {
   margin-top: 10px;
-  margin-left: 3%;
+  margin-left: 4.5%; //3%;
   //margin-right: 50px;
 
   & svg {
     fill: $third-color;
-    padding-top: 10px;
+    padding-top: 12px;
     padding-right: 8px;
   }
 }
